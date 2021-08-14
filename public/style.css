@@ -1,0 +1,130 @@
+body{
+    /* background-image: linear-gradient(to top, cyan, yellow); */
+    background-image: url("https://source.unsplash.com/1600x900/?city,nature");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+}
+.form{
+    /* border: 2px solid black; */
+    display:block;
+    justify-content: center;
+    text-align: center;
+    width:40%;
+    height: 50%;
+    margin:auto;
+    margin-top: 150px;
+    position: relative;
+}
+.form::before{
+    content:"";
+    background-color: black;
+    height:100%;
+    width:100%;
+    position:absolute; /*parent class needs to be relative */
+    z-index: -1;
+    opacity:0.3;
+    top:0;
+    left:0;
+}
+h2{
+    margin-top: 10px;
+    font-family: 'Monoton', cursive;
+}
+.box{
+    font-family: 'Raleway', sans-serif;
+    display:block;
+    /* border: 2px solid yellow; */
+    text-align: center;
+    padding:10px;
+    margin-top: 0px;
+    margin: 10px auto;
+    width:70%;
+    justify-content: center;
+    border-radius:20px;
+    border-style: none;
+    background-color: ivory;
+    font-weight: bolder;
+    color:black;
+}
+
+.box:hover{
+    box-shadow:1px 1px 1px 1px rgb(201, 196, 196);
+    box-shadow:-1px -1px 1px 1px rgb(201, 196, 196);
+    /* border:2px red; */
+}
+.box:focus{
+    outline: none;
+    box-shadow:1px 1px 1px 1px rgb(138, 136, 136);
+    box-shadow:-1px -1px 1px 1px rgb(136, 135, 135);
+}
+
+.button{
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    width:74%;
+    border-radius: 20px;
+    border:none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color:white;
+    background-color: black;
+}
+.button:hover{
+    background-color: tomato;
+    font-weight: bolder;
+    color:black;
+}
+h2,h4{
+    color: ivory;
+}
+/* register button */
+a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+/* registeration form */
+.formReg{
+     /* border: 2px solid black; */
+     display:block;
+     justify-content: center;
+     text-align: center;
+     width:55%;
+     height: 60%;
+     margin:auto;
+     margin-top: 80px;
+     position: relative;
+}
+.formReg::before{
+    content:"";
+    background-color: black;
+    height:100%;
+    width:100%;
+    position:absolute; /*parent class needs to be relative */
+    z-index: -1;
+    opacity:0.3;
+    top:0;
+    left:0;
+}
+.formReg input:nth-child(2n+0){
+    /* every second element */
+    float:right;
+    width:43%;
+    /* clear:both; */
+    margin-right: 10px;
+    margin-left: -5px;
+}
+.formReg input:nth-child(2n+1){
+    /* every second element */
+    /* color:chartreuse; */
+    float:left;
+    width:43%;
+    /* clear:both; */
+    margin-right: -5px;
+    margin-left: 10px;
+}
+.buttonReg{
+    margin-top: 10px;
+} 

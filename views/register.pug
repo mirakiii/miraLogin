@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home
+        link(rel="stylesheet", href="/public/style.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Monoton&family=Rock+Salt&family=Sacramento&family=Satisfy&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet")   
+    
+    body 
+        .formReg
+            h2 REGISTER
+            form(action="/register", method="POST")
+                //- label(for="email") Enter Your Email
+                input#first.box(type="text", name="first", placeholder="Enter Your First Name")
+                input#last.box(type="text", name="last", placeholder="Enter Your Last Name")
+                input#phone.box(type="text", name="phone", placeholder="Enter Your Phone Number")
+
+                //- input#male(type="radio",name="gender",value="male",checked=true)
+                //- label Male
+                //- Span 
+                //- input#female(type="radio",name="gender",value="female",checked=false)
+                //- label Female
+        
+                //- .radio(input type="radio" name="mygender") Male
+                //- .radio(input type="radio" name="mygender") Female
+                //- input#gender(type="checkbox", name="mail", placeholder="Enter Your gender")
+                input#mail.box(type="text", name="mail", placeholder="Enter Your Mail")
+                input#password1.box(type="text", name="password1", placeholder="Enter Your Password")
+                input#password2.box(type="text", name="password2", placeholder="Confirm Your Password")
+                button.button.buttonReg(type="submit", value="registered") Register
+                h4 Have Already registered? 
+                a(href="/").button#login Login
